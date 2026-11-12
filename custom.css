@@ -1,0 +1,96 @@
+    .select2-container .select2-selection--single{
+        height : 38px !important;
+}
+    .select2-container--default .select2-selection--single .select2-selection_rendered{
+        line-height: 38px !important;
+}
+    .select2-container--default .select2-selection--single .select2-selection_arrow{
+        height: 38px !important;
+}
+
+.quantityInput{
+    width: 50px !important;
+    padding: 6px 3px;
+    text-align: center;
+    border: 1px solid #e0b4b4;
+    outline: 0;
+    margin-right: 1px;
+}
+
+/* Make quantity input visible on dark theme */
+.quantityInput {
+    background: rgba(255, 255, 255, 0.04) !important;
+    color: var(--text-light) !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    border-radius: 6px !important;
+    font-weight: 700 !important;
+    width: 90px !important;
+    padding: 8px 10px !important;
+    font-size: 1rem !important;
+    height: 40px !important;
+}
+
+.quantityInput::placeholder {
+    color: rgba(255,255,255,0.6) !important;
+}
+
+.quantityInput:focus {
+    background: rgba(255, 255, 255, 0.06) !important;
+    box-shadow: 0 0 0 0.15rem rgba(255,31,91,0.06) !important;
+    outline: none !important;
+}
+
+@media (max-width: 575.98px) {
+    .quantityInput {
+        width: 64px !important;
+        font-size: 0.95rem !important;
+        padding: 6px 8px !important;
+        height: 36px !important;
+    }
+}
+
+/* Ensure Remove buttons in product tables are clearly visible */
+.table .btn-danger, .table a.btn-danger {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    text-shadow: none !important;
+    padding: 0.4rem 0.8rem !important;
+    border-radius: 10px !important;
+}
+
+/* Ensure header action buttons (like Back) match primary button typography */
+.card-header .btn {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 0.95rem !important;
+    padding: 0.45rem 0.85rem !important;
+    text-shadow: none !important;
+    border-radius: 12px !important;
+}
+
+/* Specific: keep primary header buttons visually consistent */
+.card-header .btn-primary {
+    background: linear-gradient(135deg, #ff2a6d, #ff5c8d) !important;
+    box-shadow: 0 8px 20px rgba(255, 31, 91, 0.15) !important;
+    color: #fff !important;
+}
+
+/* Ensure select dropdown options inside cards are readable (black text on white bg) */
+.card select, .card .form-select {
+    color: #000 !important;
+    background: #fff !important;
+}
+.card select option, .card .form-select option {
+    color: #000 !important;
+    background: #fff !important;
+}
+
+/* Select2 dropdowns (used for product select) */
+.select2-container--default .select2-selection--single {
+    color: #000 !important;
+    background: #fff !important;
+}
+.select2-container--default .select2-results__option {
+    color: #000 !important;
+    background: #fff !important;
+}
